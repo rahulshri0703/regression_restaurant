@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/230770308162272052/c6177aa69a9147c0a5dddad249070004/artifacts
+end_time: 1672257620934
+entry_point_name: ''
+experiment_id: '230770308162272052'
+lifecycle_stage: active
+run_id: c6177aa69a9147c0a5dddad249070004
+run_name: tree
+run_uuid: c6177aa69a9147c0a5dddad249070004
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672257609533
+status: 3
+tags: []
+user_id: rahul

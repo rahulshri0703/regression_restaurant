@@ -1,0 +1,54 @@
+package_name: boosting_model
+
+training_x_file: x_train.csv
+training_y_file: y_train.csv
+
+test_x_file: x_test.csv
+test_y_file: y_test.csv
+
+saved_model_name: xgboost
+
+pipeline_name: final_pipeline2.pkl
+
+feature_to_drop: 
+    - 'location'
+    - 'name'
+    
+count_vector: 
+    - 'cuisines'
+    
+tfidf:
+    - 'reviews_list'
+    
+categorical:
+    - 'listed_in_type'
+    - 'rest_type'
+    - 'listed_in_city'
+    
+numerical:
+    - 'votes'
+    - 'approx_cost'
+ordinal: 
+    - 'online_order'
+    - 'book_table'
+target:
+    - 'rate'
+
+rename:
+    approx_cost(for two people) : 'approx_cost'
+    listed_in(type) : 'listed_in_type'
+    listed_in(city) : 'listed_in_city'
+
+features:
+    - 'location'
+    - 'name'
+    - 'cuisines'
+    - 'reviews_list'
+    - 'listed_in_type'
+    - 'rest_type'
+    - 'listed_in_city'
+    - 'votes'
+    - 'approx_cost'
+    - 'online_order'
+    - 'book_table'
+   

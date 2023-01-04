@@ -1,0 +1,207 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.2
+mlflow_version: 2.0.1
+model_uuid: 2491bf04e52c453ea336ec730b8f14d3
+run_id: bfbd978ab40e4cca978822546660630d
+signature:
+  inputs: '[{"name": "Unnamed: 0", "type": "long"}, {"name": "online_order", "type":
+    "long"}, {"name": "book_table", "type": "long"}, {"name": "votes", "type": "double"},
+    {"name": "approx_cost(for two people)", "type": "double"}, {"name": "listed_in(type)_Buffet",
+    "type": "double"}, {"name": "listed_in(type)_Cafes", "type": "double"}, {"name":
+    "listed_in(type)_Delivery", "type": "double"}, {"name": "listed_in(type)_Desserts",
+    "type": "double"}, {"name": "listed_in(type)_Dine-out", "type": "double"}, {"name":
+    "listed_in(type)_Drinks & nightlife", "type": "double"}, {"name": "listed_in(type)_Pubs
+    and bars", "type": "double"}, {"name": "rest_type_Bakery", "type": "double"},
+    {"name": "rest_type_Bakery, Beverage Shop", "type": "double"}, {"name": "rest_type_Bakery,
+    Cafe", "type": "double"}, {"name": "rest_type_Bakery, Dessert Parlor", "type":
+    "double"}, {"name": "rest_type_Bakery, Food Court", "type": "double"}, {"name":
+    "rest_type_Bakery, Quick Bites", "type": "double"}, {"name": "rest_type_Bar",
+    "type": "double"}, {"name": "rest_type_Bar, Casual Dining", "type": "double"},
+    {"name": "rest_type_Bar, Lounge", "type": "double"}, {"name": "rest_type_Bar,
+    Pub", "type": "double"}, {"name": "rest_type_Bar, Quick Bites", "type": "double"},
+    {"name": "rest_type_Beverage Shop", "type": "double"}, {"name": "rest_type_Beverage
+    Shop, Cafe", "type": "double"}, {"name": "rest_type_Beverage Shop, Dessert Parlor",
+    "type": "double"}, {"name": "rest_type_Beverage Shop, Quick Bites", "type": "double"},
+    {"name": "rest_type_Bhojanalya", "type": "double"}, {"name": "rest_type_Cafe",
+    "type": "double"}, {"name": "rest_type_Cafe, Bakery", "type": "double"}, {"name":
+    "rest_type_Cafe, Bar", "type": "double"}, {"name": "rest_type_Cafe, Casual Dining",
+    "type": "double"}, {"name": "rest_type_Cafe, Dessert Parlor", "type": "double"},
+    {"name": "rest_type_Cafe, Food Court", "type": "double"}, {"name": "rest_type_Cafe,
+    Lounge", "type": "double"}, {"name": "rest_type_Cafe, Quick Bites", "type": "double"},
+    {"name": "rest_type_Casual Dining", "type": "double"}, {"name": "rest_type_Casual
+    Dining, Bar", "type": "double"}, {"name": "rest_type_Casual Dining, Cafe", "type":
+    "double"}, {"name": "rest_type_Casual Dining, Irani Cafee", "type": "double"},
+    {"name": "rest_type_Casual Dining, Lounge", "type": "double"}, {"name": "rest_type_Casual
+    Dining, Microbrewery", "type": "double"}, {"name": "rest_type_Casual Dining, Pub",
+    "type": "double"}, {"name": "rest_type_Casual Dining, Quick Bites", "type": "double"},
+    {"name": "rest_type_Casual Dining, Sweet Shop", "type": "double"}, {"name": "rest_type_Club",
+    "type": "double"}, {"name": "rest_type_Club, Casual Dining", "type": "double"},
+    {"name": "rest_type_Confectionery", "type": "double"}, {"name": "rest_type_Delivery",
+    "type": "double"}, {"name": "rest_type_Dessert Parlor", "type": "double"}, {"name":
+    "rest_type_Dessert Parlor, Bakery", "type": "double"}, {"name": "rest_type_Dessert
+    Parlor, Beverage Shop", "type": "double"}, {"name": "rest_type_Dessert Parlor,
+    Cafe", "type": "double"}, {"name": "rest_type_Dessert Parlor, Food Court", "type":
+    "double"}, {"name": "rest_type_Dessert Parlor, Kiosk", "type": "double"}, {"name":
+    "rest_type_Dessert Parlor, Quick Bites", "type": "double"}, {"name": "rest_type_Dessert
+    Parlor, Sweet Shop", "type": "double"}, {"name": "rest_type_Dhaba", "type": "double"},
+    {"name": "rest_type_Fine Dining", "type": "double"}, {"name": "rest_type_Fine
+    Dining, Bar", "type": "double"}, {"name": "rest_type_Fine Dining, Lounge", "type":
+    "double"}, {"name": "rest_type_Fine Dining, Microbrewery", "type": "double"},
+    {"name": "rest_type_Food Court", "type": "double"}, {"name": "rest_type_Food Court,
+    Beverage Shop", "type": "double"}, {"name": "rest_type_Food Court, Casual Dining",
+    "type": "double"}, {"name": "rest_type_Food Court, Dessert Parlor", "type": "double"},
+    {"name": "rest_type_Food Court, Quick Bites", "type": "double"}, {"name": "rest_type_Food
+    Truck", "type": "double"}, {"name": "rest_type_Kiosk", "type": "double"}, {"name":
+    "rest_type_Lounge", "type": "double"}, {"name": "rest_type_Lounge, Bar", "type":
+    "double"}, {"name": "rest_type_Lounge, Cafe", "type": "double"}, {"name": "rest_type_Lounge,
+    Casual Dining", "type": "double"}, {"name": "rest_type_Lounge, Microbrewery",
+    "type": "double"}, {"name": "rest_type_Mess", "type": "double"}, {"name": "rest_type_Microbrewery",
+    "type": "double"}, {"name": "rest_type_Microbrewery, Bar", "type": "double"},
+    {"name": "rest_type_Microbrewery, Casual Dining", "type": "double"}, {"name":
+    "rest_type_Microbrewery, Lounge", "type": "double"}, {"name": "rest_type_Microbrewery,
+    Pub", "type": "double"}, {"name": "rest_type_Pub", "type": "double"}, {"name":
+    "rest_type_Pub, Bar", "type": "double"}, {"name": "rest_type_Pub, Cafe", "type":
+    "double"}, {"name": "rest_type_Pub, Casual Dining", "type": "double"}, {"name":
+    "rest_type_Pub, Microbrewery", "type": "double"}, {"name": "rest_type_Quick Bites",
+    "type": "double"}, {"name": "rest_type_Quick Bites, Bakery", "type": "double"},
+    {"name": "rest_type_Quick Bites, Beverage Shop", "type": "double"}, {"name": "rest_type_Quick
+    Bites, Cafe", "type": "double"}, {"name": "rest_type_Quick Bites, Dessert Parlor",
+    "type": "double"}, {"name": "rest_type_Quick Bites, Food Court", "type": "double"},
+    {"name": "rest_type_Quick Bites, Kiosk", "type": "double"}, {"name": "rest_type_Quick
+    Bites, Meat Shop", "type": "double"}, {"name": "rest_type_Quick Bites, Mess",
+    "type": "double"}, {"name": "rest_type_Quick Bites, Sweet Shop", "type": "double"},
+    {"name": "rest_type_Sweet Shop", "type": "double"}, {"name": "rest_type_Sweet
+    Shop, Quick Bites", "type": "double"}, {"name": "rest_type_Takeaway", "type":
+    "double"}, {"name": "rest_type_Takeaway, Delivery", "type": "double"}, {"name":
+    "listed_in(city)_BTM", "type": "double"}, {"name": "listed_in(city)_Banashankari",
+    "type": "double"}, {"name": "listed_in(city)_Bannerghatta Road", "type": "double"},
+    {"name": "listed_in(city)_Basavanagudi", "type": "double"}, {"name": "listed_in(city)_Bellandur",
+    "type": "double"}, {"name": "listed_in(city)_Brigade Road", "type": "double"},
+    {"name": "listed_in(city)_Brookefield", "type": "double"}, {"name": "listed_in(city)_Church
+    Street", "type": "double"}, {"name": "listed_in(city)_Electronic City", "type":
+    "double"}, {"name": "listed_in(city)_Frazer Town", "type": "double"}, {"name":
+    "listed_in(city)_HSR", "type": "double"}, {"name": "listed_in(city)_Indiranagar",
+    "type": "double"}, {"name": "listed_in(city)_JP Nagar", "type": "double"}, {"name":
+    "listed_in(city)_Jayanagar", "type": "double"}, {"name": "listed_in(city)_Kalyan
+    Nagar", "type": "double"}, {"name": "listed_in(city)_Kammanahalli", "type": "double"},
+    {"name": "listed_in(city)_Koramangala 4th Block", "type": "double"}, {"name":
+    "listed_in(city)_Koramangala 5th Block", "type": "double"}, {"name": "listed_in(city)_Koramangala
+    6th Block", "type": "double"}, {"name": "listed_in(city)_Koramangala 7th Block",
+    "type": "double"}, {"name": "listed_in(city)_Lavelle Road", "type": "double"},
+    {"name": "listed_in(city)_MG Road", "type": "double"}, {"name": "listed_in(city)_Malleshwaram",
+    "type": "double"}, {"name": "listed_in(city)_Marathahalli", "type": "double"},
+    {"name": "listed_in(city)_New BEL Road", "type": "double"}, {"name": "listed_in(city)_Old
+    Airport Road", "type": "double"}, {"name": "listed_in(city)_Rajajinagar", "type":
+    "double"}, {"name": "listed_in(city)_Residency Road", "type": "double"}, {"name":
+    "listed_in(city)_Sarjapur Road", "type": "double"}, {"name": "listed_in(city)_Whitefield",
+    "type": "double"}, {"name": "afghan", "type": "long"}, {"name": "afghani", "type":
+    "long"}, {"name": "african", "type": "long"}, {"name": "american", "type": "long"},
+    {"name": "andhra", "type": "long"}, {"name": "arabian", "type": "long"}, {"name":
+    "asian", "type": "long"}, {"name": "assamese", "type": "long"}, {"name": "australian",
+    "type": "long"}, {"name": "awadhi", "type": "long"}, {"name": "bakery", "type":
+    "long"}, {"name": "barfood", "type": "long"}, {"name": "bbq", "type": "long"},
+    {"name": "belgian", "type": "long"}, {"name": "bengali", "type": "long"}, {"name":
+    "beverages", "type": "long"}, {"name": "bihari", "type": "long"}, {"name": "biryani",
+    "type": "long"}, {"name": "bohri", "type": "long"}, {"name": "british", "type":
+    "long"}, {"name": "bubbletea", "type": "long"}, {"name": "burger", "type": "long"},
+    {"name": "burmese", "type": "long"}, {"name": "cafe", "type": "long"}, {"name":
+    "cantonese", "type": "long"}, {"name": "charcoalchicken", "type": "long"}, {"name":
+    "chettinad", "type": "long"}, {"name": "chinese", "type": "long"}, {"name": "coffee",
+    "type": "long"}, {"name": "continental", "type": "long"}, {"name": "desserts",
+    "type": "long"}, {"name": "drinksonly", "type": "long"}, {"name": "european",
+    "type": "long"}, {"name": "fastfood", "type": "long"}, {"name": "fingerfood",
+    "type": "long"}, {"name": "french", "type": "long"}, {"name": "german", "type":
+    "long"}, {"name": "goan", "type": "long"}, {"name": "greek", "type": "long"},
+    {"name": "grill", "type": "long"}, {"name": "gujarati", "type": "long"}, {"name":
+    "healthyfood", "type": "long"}, {"name": "hotdogs", "type": "long"}, {"name":
+    "hyderabadi", "type": "long"}, {"name": "icecream", "type": "long"}, {"name":
+    "indonesian", "type": "long"}, {"name": "iranian", "type": "long"}, {"name": "italian",
+    "type": "long"}, {"name": "japanese", "type": "long"}, {"name": "jewish", "type":
+    "long"}, {"name": "juices", "type": "long"}, {"name": "kashmiri", "type": "long"},
+    {"name": "kebab", "type": "long"}, {"name": "kerala", "type": "long"}, {"name":
+    "konkan", "type": "long"}, {"name": "korean", "type": "long"}, {"name": "lebanese",
+    "type": "long"}, {"name": "lucknowi", "type": "long"}, {"name": "maharashtrian",
+    "type": "long"}, {"name": "malaysian", "type": "long"}, {"name": "mangalorean",
+    "type": "long"}, {"name": "mediterranean", "type": "long"}, {"name": "mex", "type":
+    "long"}, {"name": "mexican", "type": "long"}, {"name": "middleeastern", "type":
+    "long"}, {"name": "mithai", "type": "long"}, {"name": "modernindian", "type":
+    "long"}, {"name": "momos", "type": "long"}, {"name": "mongolian", "type": "long"},
+    {"name": "mughlai", "type": "long"}, {"name": "naga", "type": "long"}, {"name":
+    "nepalese", "type": "long"}, {"name": "northeastern", "type": "long"}, {"name":
+    "northindian", "type": "long"}, {"name": "oriya", "type": "long"}, {"name": "paan",
+    "type": "long"}, {"name": "panasian", "type": "long"}, {"name": "parsi", "type":
+    "long"}, {"name": "pizza", "type": "long"}, {"name": "portuguese", "type": "long"},
+    {"name": "rajasthani", "type": "long"}, {"name": "rawmeats", "type": "long"},
+    {"name": "roastchicken", "type": "long"}, {"name": "rolls", "type": "long"}, {"name":
+    "russian", "type": "long"}, {"name": "salad", "type": "long"}, {"name": "sandwich",
+    "type": "long"}, {"name": "seafood", "type": "long"}, {"name": "sindhi", "type":
+    "long"}, {"name": "singaporean", "type": "long"}, {"name": "southamerican", "type":
+    "long"}, {"name": "southindian", "type": "long"}, {"name": "spanish", "type":
+    "long"}, {"name": "srilankan", "type": "long"}, {"name": "steak", "type": "long"},
+    {"name": "streetfood", "type": "long"}, {"name": "sushi", "type": "long"}, {"name":
+    "tamil", "type": "long"}, {"name": "tea", "type": "long"}, {"name": "tex", "type":
+    "long"}, {"name": "thai", "type": "long"}, {"name": "tibetan", "type": "long"},
+    {"name": "turkish", "type": "long"}, {"name": "vegan", "type": "long"}, {"name":
+    "vietnamese", "type": "long"}, {"name": "wraps", "type": "long"}, {"name": "amazing",
+    "type": "double"}, {"name": "ambiance", "type": "double"}, {"name": "ambience",
+    "type": "double"}, {"name": "average", "type": "double"}, {"name": "awesome",
+    "type": "double"}, {"name": "bad", "type": "double"}, {"name": "bangalore", "type":
+    "double"}, {"name": "beer", "type": "double"}, {"name": "best", "type": "double"},
+    {"name": "better", "type": "double"}, {"name": "biryani.1", "type": "double"},
+    {"name": "bit", "type": "double"}, {"name": "burger.1", "type": "double"}, {"name":
+    "cafe.1", "type": "double"}, {"name": "cake", "type": "double"}, {"name": "cheese",
+    "type": "double"}, {"name": "chicken", "type": "double"}, {"name": "chocolate",
+    "type": "double"}, {"name": "decent", "type": "double"}, {"name": "definitely",
+    "type": "double"}, {"name": "delicious", "type": "double"}, {"name": "delivery",
+    "type": "double"}, {"name": "didnt", "type": "double"}, {"name": "different",
+    "type": "double"}, {"name": "dishes", "type": "double"}, {"name": "dont", "type":
+    "double"}, {"name": "drinks", "type": "double"}, {"name": "experience", "type":
+    "double"}, {"name": "fish", "type": "double"}, {"name": "food", "type": "double"},
+    {"name": "fresh", "type": "double"}, {"name": "fried", "type": "double"}, {"name":
+    "friendly", "type": "double"}, {"name": "friends", "type": "double"}, {"name":
+    "good", "type": "double"}, {"name": "got", "type": "double"}, {"name": "great",
+    "type": "double"}, {"name": "ice", "type": "double"}, {"name": "indian", "type":
+    "double"}, {"name": "items", "type": "double"}, {"name": "just", "type": "double"},
+    {"name": "like", "type": "double"}, {"name": "little", "type": "double"}, {"name":
+    "lot", "type": "double"}, {"name": "love", "type": "double"}, {"name": "loved",
+    "type": "double"}, {"name": "lunch", "type": "double"}, {"name": "main", "type":
+    "double"}, {"name": "masala", "type": "double"}, {"name": "menu", "type": "double"},
+    {"name": "money", "type": "double"}, {"name": "music", "type": "double"}, {"name":
+    "nice", "type": "double"}, {"name": "night", "type": "double"}, {"name": "non",
+    "type": "double"}, {"name": "ok", "type": "double"}, {"name": "options", "type":
+    "double"}, {"name": "order", "type": "double"}, {"name": "ordered", "type": "double"},
+    {"name": "overall", "type": "double"}, {"name": "paneer", "type": "double"}, {"name":
+    "pasta", "type": "double"}, {"name": "people", "type": "double"}, {"name": "perfect",
+    "type": "double"}, {"name": "pizza.1", "type": "double"}, {"name": "place", "type":
+    "double"}, {"name": "pretty", "type": "double"}, {"name": "price", "type": "double"},
+    {"name": "quality", "type": "double"}, {"name": "quantity", "type": "double"},
+    {"name": "quick", "type": "double"}, {"name": "quite", "type": "double"}, {"name":
+    "really", "type": "double"}, {"name": "recommend", "type": "double"}, {"name":
+    "restaurant", "type": "double"}, {"name": "rice", "type": "double"}, {"name":
+    "say", "type": "double"}, {"name": "seating", "type": "double"}, {"name": "serve",
+    "type": "double"}, {"name": "served", "type": "double"}, {"name": "service", "type":
+    "double"}, {"name": "small", "type": "double"}, {"name": "spicy", "type": "double"},
+    {"name": "staff", "type": "double"}, {"name": "starters", "type": "double"}, {"name":
+    "taste", "type": "double"}, {"name": "tasted", "type": "double"}, {"name": "tasty",
+    "type": "double"}, {"name": "time", "type": "double"}, {"name": "tried", "type":
+    "double"}, {"name": "try", "type": "double"}, {"name": "veg", "type": "double"},
+    {"name": "visit", "type": "double"}, {"name": "visited", "type": "double"}, {"name":
+    "went", "type": "double"}, {"name": "worth", "type": "double"}, {"name": "xf\u00e3",
+    "type": "double"}, {"name": "xs", "type": "double"}, {"name": "x\u00e3", "type":
+    "double"}, {"name": "zomato", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1,
+    2]}}]'
+utc_time_created: '2022-12-28 19:43:59.836429'

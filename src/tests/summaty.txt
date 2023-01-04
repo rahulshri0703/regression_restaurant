@@ -1,0 +1,7 @@
+run: pytest -v
+run specific file only: pytest -v tests/test_pipeline.py
+
+run with shorter summary: pytest -v
+run particular file: pytest tests/test_config.py
+run particular test only : pytest -v -k test_configure ( only test named 
+                        test_configure will run )

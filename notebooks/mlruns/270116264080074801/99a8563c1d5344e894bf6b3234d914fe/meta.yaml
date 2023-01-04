@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rahul/Documents/stat%2BML%2Bsql/projects/regression/regression_restaurant/notebooks/mlruns/270116264080074801/99a8563c1d5344e894bf6b3234d914fe/artifacts
+end_time: 1672256657166
+entry_point_name: ''
+experiment_id: '270116264080074801'
+lifecycle_stage: active
+run_id: 99a8563c1d5344e894bf6b3234d914fe
+run_name: linearsvm
+run_uuid: 99a8563c1d5344e894bf6b3234d914fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672256647781
+status: 3
+tags: []
+user_id: rahul

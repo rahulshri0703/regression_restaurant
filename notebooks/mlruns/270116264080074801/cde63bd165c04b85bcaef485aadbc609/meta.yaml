@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rahul/Documents/stat%2BML%2Bsql/projects/regression/regression_restaurant/notebooks/mlruns/270116264080074801/cde63bd165c04b85bcaef485aadbc609/artifacts
+end_time: 1672256616150
+entry_point_name: ''
+experiment_id: '270116264080074801'
+lifecycle_stage: active
+run_id: cde63bd165c04b85bcaef485aadbc609
+run_name: ada
+run_uuid: cde63bd165c04b85bcaef485aadbc609
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672256606219
+status: 3
+tags: []
+user_id: rahul

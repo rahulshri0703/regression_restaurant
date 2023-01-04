@@ -1,0 +1,27 @@
+feature_to_drop: 
+    - 'location'
+    - 'name'
+    
+count_vector: 
+    - 'cuisines'
+    
+tfidf:
+    - 'reviews_list'
+    
+categorical:
+    - 'listed_in(type)'
+    - 'rest_type'
+    - 'listed_in(city)'
+    
+numerical:
+    - 'votes'
+    - 'approx_cost(for two people)'
+    
+target:
+    - 'rate'
+
+rename:
+    approx_cost(for two people) : 'approx_cost'
+    listed_in(type) : 'listed_in_type'
+    listed_in(city) : 'listed_in_city'
+    

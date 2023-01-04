@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rahul/Documents/stat%2BML%2Bsql/projects/regression/regression_restaurant/notebooks/mlruns/270116264080074801/b8ae1e1027b244a08f41a12bd77703b2/artifacts
+end_time: 1672256587243
+entry_point_name: ''
+experiment_id: '270116264080074801'
+lifecycle_stage: active
+run_id: b8ae1e1027b244a08f41a12bd77703b2
+run_name: lasso
+run_uuid: b8ae1e1027b244a08f41a12bd77703b2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672256577612
+status: 3
+tags: []
+user_id: rahul

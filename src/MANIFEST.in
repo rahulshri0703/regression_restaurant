@@ -1,0 +1,10 @@
+include *.yaml
+include *.pkl
+recursive-include ./boosting_model/*
+
+include boosting_model/config.yaml
+include boosting_model/data/x_train.csv
+include boosting_model/data/y_train.csv
+include boosting_model/best_model/xgboost
+include boosting_model/VERSION
+include boosting_model/best_model/final_pipeline2.pkl

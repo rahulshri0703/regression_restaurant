@@ -1,0 +1,71 @@
+stylecheck : flake8 gradient_boosting_model
+typecheck : mypy gradient_boosting_model
+
+#=================================================================
+pytest:
+run: pytest -v
+run specific file only: pytest -v tests/test_pipeline.py
+
+run with shorter summary: pytest -v
+run particular file: pytest tests/test_config.py
+run particular test only : pytest -v -k test_configure ( only test named 
+                        test_configure will run )
+
+#=================================================================
+tox:
+run: tox
+rerun: tox -r
+
+tox.ini file :
+'''
+[tox]
+envlist = py3,unit_tests,typechecks,stylechecks
+skipsdist = True
+
+[testenv]
+deps = -rtest_requirements.txt
+
+setenv =
+  PYTHONPATH=.
+
+commands = pytest -v
+
+[testenv:unit_tests]
+envdir = {toxworkdir}/unit_tests
+deps =
+     {[testenv:py3]deps}
+
+setenv =
+  PYTHONPATH=.
+
+commands = python boosting_model/train_pipeline.py
+     pytest \
+            -s \
+           -vv \
+           {posargs:tests/}
+
+[testenv:typechecks]
+envdir = {toxworkdir}/unit_tests
+
+deps =
+     {[testenv:unit_tests]deps}
+
+commands = {posargs:mypy boosting_model}
+
+
+[testenv:stylechecks]
+envdir = {toxworkdir}/unit_tests
+
+deps =
+     {[testenv:unit_tests]deps}
+
+commands = {posargs:flake8 boosting_model tests}
+
+
+[flake8]
+exclude = .git,env
+max-line-length = 90
+
+
+
+'''

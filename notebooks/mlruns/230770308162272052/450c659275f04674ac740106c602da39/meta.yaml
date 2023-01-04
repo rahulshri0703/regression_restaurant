@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/230770308162272052/450c659275f04674ac740106c602da39/artifacts
+end_time: 1672257466905
+entry_point_name: ''
+experiment_id: '230770308162272052'
+lifecycle_stage: active
+run_id: 450c659275f04674ac740106c602da39
+run_name: rf
+run_uuid: 450c659275f04674ac740106c602da39
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672257407078
+status: 3
+tags: []
+user_id: rahul
