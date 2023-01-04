@@ -26,6 +26,6 @@ jobs:
             
       
     - name : runner
-      run : tox
+      run : pytest src/tests
 
  
