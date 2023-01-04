@@ -15,6 +15,9 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: configure
-      run: tox
+      run: pip install tox
+      
+    - name : runner
+      run : tox
 
  
