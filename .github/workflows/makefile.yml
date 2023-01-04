@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: configure
-      run: apt update
+      run: sudo apt update
       
     - name: configure2
       run: sudo apt install python3-pip
