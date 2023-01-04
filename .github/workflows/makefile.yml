@@ -30,4 +30,7 @@ jobs:
       
     - name : runner
       run : pytest src/tests
+      
+    - name : runner
+      run : tox
  
