@@ -18,19 +18,14 @@ jobs:
       run: sudo apt update
       
     - name: configure2
-      run: sudo apt install python3-pip
+      run: |
+        sudo apt install python3-pip
+        pip install -r src/requirements.txt
+        pip install pytest tox
       
-    - name: configure3
-      run: pip install -r src/requirements.txt
-         
-            
-      
-    - name : runner
-      run : pip install pytest tox
-      
-    - name : runner
+    - name : pytest_run
       run : pytest src/tests
       
-    - name : runner
+    - name : tox_run
       run : tox -r
  
