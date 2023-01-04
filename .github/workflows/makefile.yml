@@ -27,6 +27,7 @@ jobs:
       
     - name : runner
       run : pip install pytest
-            pytest src/tests
-
+      
+    - name : runner
+      run : pytest src/tests
  
