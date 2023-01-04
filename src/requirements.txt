@@ -1,7 +1,7 @@
 # ML requirements
 numpy
 pandas
-scikit-learn
+scikit-learn == 1.0.2
 xgboost==1.6.2
 joblib>=1.0.1,<1.1.0
 
