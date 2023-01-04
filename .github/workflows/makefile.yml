@@ -21,7 +21,7 @@ jobs:
       run: sudo apt install python3-pip
       
     - name: configure3
-      run: pip install tox
+      run: pip install -r src/requirements.txt
          
             
       
