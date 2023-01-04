@@ -26,6 +26,6 @@ jobs:
     - name : pytest_run
       run : pytest src/tests
       
-    - name : tox_run
-      run : tox -r
+    #- name : tox_run
+    #  run : tox -r
  
