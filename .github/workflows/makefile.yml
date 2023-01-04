@@ -1,31 +1,31 @@
-name: Makefile CI
+name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
-
+    branches: ['main']
+  
 jobs:
   build:
+    runs-on: ${{ matrix.os }}
 
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: configure
-      run: sudo apt update
-      
-    - name: configure2
-      run: |
-        sudo apt install python3-pip
-        pip install -r src/requirements.txt
-        pip install pytest tox
-      
-    - name : pytest_run
-      run : pytest src/tests
-      
-    #- name : tox_run
-    #  run : tox -r
- 
+      - name: configure
+        run: sudo apt update
+        
+      - name: configure2
+        run: |
+          sudo apt install python3-pip
+          pip install -r src/requirements.txt
+          pip install pytest tox
+        
+      - name : pytest_run
+        run : pytest src/tests
+
